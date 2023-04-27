@@ -1,4 +1,8 @@
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
-  transpileDependencies: true
+  transpileDependencies: true,
+  test: {
+    globals: true,
+    environment: 'happy-dom'
+  }
 })
